@@ -1,2 +1,2 @@
 # RepublicHo.github.io
-Personal website
+Feel free to visit my personal website: [Link](https://republicho.github.io/)
