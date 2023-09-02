@@ -46,20 +46,19 @@
 
         <h2>Introduction</h2>
         <p align="justify">
-            This project is inspired by a research project conducted at Alibaba. Nowadays it's comparatively easy to query and analyze solely structured or unstructured data with recent developments in ML and representation learning. In practice, however, queries
-            in analytical databases usually involve both structured and unstructured data. It remains a challenge in the industry to enable searching structured (i.e., related attributes) and unstructured data (i.e., feature vectors) in a hybrid and efficient
-            manner. This research project aims to investigate and propose a better solution in this regard and implement a demo system.
+            This project is inspired by a research project conducted at Alibaba. With recent advancements in machine learning and representation learning, querying and analyzing either structured or unstructured data alone has become comparatively easy nowadays.
+            In practice, however, queries in analytical databases usually involve both structured and unstructured data. We noted that it remains a challenge in the industry to enable searching structured (i.e., related attributes) and unstructured data
+            (i.e., feature vectors) in a hybrid and efficient manner. This research project aims to investigate and propose a better solution in this regard and developed a demo system.
         </p>
         <h2>Research output</h2>
-        <p align="justify">Technical Report: Coming soon!</p>
+        <p align="justify">Technical Report. </p>
         <p align="justify">Quantization-based method has been adopted by Alibaba and Milvus, and we conduct relevant research. Study: [<a href="./resources/product quantization.pdf">link</a>]</p>
 
         <h2>Our proposed methods</h2>
-        <p align="justify">We have implemented both VP-tree and Product Quantization (PQ) methods to enhance the efficiency of hybrid search utilizing Approximate Nearest Neighbor Search (ANNs). In the case of VP-tree, instead of treating vector search and attribute filtering
-            as distinct stages, we propose a simultaneous application of both criteria. By considering both the location and size, we determine whether a house should be added to the list of interest. </p>
-        <p align="justify">Regarding PQ, we propose the utilization of a pre-query method. We have proven its superiority as it allows us to perform attribute filtering prior to the inevitable distance calculation between each query vector and the corresponding pq-code.
-            And pre-query would not sacriface the result of tok-k retrieval. And We find incorporating attribute filtering before the distance calculation process significantly improves the overall efficiency of the search, considering the in terms of
-            speed and resource utilization
+        <p align="justify">We took advantage of Approximate Nearest Neighbor Search (ANNs) and implemented both VP-tree and Product Quantization (PQ) methods to expedite hybrid search. In the case of VP-tree, instead of reckoning vector search and attribute filtering as
+            distinct stages, we proposed a simultaneous application of both criteria. Our research has demonstrated the superior performance of the concurrent hybrid search method in VP-tree compared to the pre-query and post-query methods. </p>
+        <p align="justify">Regarding PQ, we proposed the utilization of a pre-query method that allows attribute filtering to be performed prior to distance calculation between each query vector and the corresponding pq-code. And importantly, pre-query would not compromise
+            the result of Top-K retrieval. We observe that incorporating attribute filtering before the distance calculation process significantly improves the overall efficiency of the search, considering metrics such as speed and resource utilization.
         </p>
 
         <h2>Demo system</h2>
